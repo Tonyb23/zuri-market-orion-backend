@@ -108,8 +108,8 @@ jobs:
           --query SecretString --output text | python3 -c "import sys,json; print(json.load(sys.stdin)['STORE_NAME'])")
 
         kubectl create secret generic zurimarket-secrets \
-          --from-literal=API_SECRET_KEY=$API_KEY \
-          --from-literal=STORE_NAME=$STORE \
+          --from-literal=API_SECRET_KEY="$API_KEY" \
+          --from-literal=STORE_NAME="$STORE" \
           --dry-run=client -o yaml | kubectl apply -f -
 
     - name: Update image tag in deployment manifest 
