@@ -49,6 +49,7 @@ All variables are listed in `.env.example`. Copy it to `.env` and fill in real v
 
 ## 5. Running Locally
 
+
 ```bash
 # 1. Clone the repo
 git clone https://github.com/Tonyb23/zuri-market-orion-backend.git
@@ -60,6 +61,7 @@ npm install
 # 3. Set up environment variables
 cp .env.example .env
 # then edit .env with your own values
+# demo
 
 # 4. Start the server
 npm run dev     # with auto-restart (nodemon), recommended for local dev
