@@ -1,5 +1,8 @@
 # Zuri Market — Backend
 
+## Architecture Diagram
+![Architecture Diagram](https://raw.githubusercontent.com/Tonyb23/zuri-market-orion-backend/a7d7942981e867e80799ad819e605cd9031f276a/zurimarket-architecture.svg)
+
 ## 1. Project Overview
 
 This is the REST API powering the Zuri Market ecommerce platform. It serves the product catalog, exposes store configuration, and validates shopping cart contents (stock checks and pricing) before checkout. Built with Node.js and Express, with an in-memory product dataset.
